@@ -1,2 +1,2 @@
-#!/bin/bash
-preprocessor
+#!bin/bash
+6-size.c
