@@ -2,25 +2,21 @@
 #include <stdlib.h>
 
 /**
- * main - printing in lowercase
+ * main - alphabets return except q and e
  * Return: Always 0 (Success)
- *
  */
 
 int main(void)
 {
-	char ch = 'a';
+	char ch;
 
-	while (ch <= 'z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if ((ch != 'e') && (ch != 'q'));
-		{
+		if (ch != 'e' && ch != 'q')
 			putchar(ch);
-		}
-			ch++;
-		}
+	}
 
-		putchar('\n');
+	putchar('\n');
 
-		return (0);
+	return (0);
 }
