@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - print lowercase and then uppercase
- * Return: Always 0
+ * main - return alphabets
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -10,13 +12,16 @@ int main(void)
 	int ch = 'a';
 	int CH = 'A';
 
-	for (ch <= 'z'; ch++;)
+	while (ch <= 'z')
 	{
 		putchar(ch);
+		ch++;
 	}
-	for (CH <= 'Z'; CH++;)
+
+	while (CH <= 'Z')
 	{
 		putchar(CH);
+		CH++;
 	}
 	putchar('\n');
 
