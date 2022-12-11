@@ -8,11 +8,14 @@
 
 int main(void)
 {
-	int a;
-
-	for (a = 10; a < 10; a++)
-
-		putchar((a % 10) + '0');
+	int c;
+	c = 0;
+	while
+		(c < 10)
+		{
+			putchar(c + '0');
+			c++;
+		}
 
 	putchar('\n');
 
