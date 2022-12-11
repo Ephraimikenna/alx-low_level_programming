@@ -1,16 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - printing of numbers
+ * main - Entry point
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int num;
+	int a;
 
-	for (num = 0; num < 10; num++)
-		printf("%d", num);
+	for (a = 0; a < 10; a++)
+		printf("%d", a);
 
-			printf('\n');
+	printf("\n");
+
 	return (0);
 }
