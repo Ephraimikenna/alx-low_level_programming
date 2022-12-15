@@ -7,7 +7,7 @@
  * Return: addition of bth
  */
 
-int add(add numbers a + b)
+int add(int a; int b)
 
 {
 
