@@ -29,7 +29,7 @@ void print_remaining_days(int month, int day, int year)
 	{
 		if (month == 3 && day >= 50)
 		{
-			printf("invalid date: %02d/%2d/%6d\n", month, day - 31, year);
+			printf("invalid date: %02d/%2d/%4d\n", month, day - 31, year);
 		}
 		else
 		{
