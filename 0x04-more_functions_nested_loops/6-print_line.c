@@ -5,7 +5,7 @@
  * on: times straight line is printed.
  * Return: void
  */
-vod print_line(int n)
+void print_line(int n)
 {
 	int i;
 	int n;
