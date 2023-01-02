@@ -10,12 +10,22 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0') /*declaring WHILE*/
+	unsigned int bytes = 0;
+	int index;
+
+	while (*s)
 	{
-		if (*s == c) /*if s == c*/
+		for (index = 0; accept[index]; index++)
 		{
-			return (s); /*return s*/
+			if (*s == accept[index])
+			{
+				bytes++;
+				break;
+			}
+			else if (accept[index + 1] == '\0')
+				return (bytes);
 		}
-	++s;
+		s++;
 	}
+
 }
