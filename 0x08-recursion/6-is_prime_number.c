@@ -5,7 +5,7 @@
  * @a: prime number
  * @b: same value
  * Return: int
- * 
+ *
  */
 
 int prime_number(int a, int b)
