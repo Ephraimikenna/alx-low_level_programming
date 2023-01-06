@@ -1,22 +1,17 @@
 #include "main.h"
 
 /**
- * _memset - fill a block of memory with a specific value
- * @s: starting address of memory to be filled
- * @b: the desired value
- * @n: number of bytes to be changed
+ * _isupper - uppercase letters
+ * @c: char to check
  *
- * Return: changed array with new value for n bytes
+ * Return: 0 or 1
  */
 
-char *_memset(char *s, char b, unsigned int n)
+int _isupper(int c)
 {
-	int i = 0;
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 
-	for (; n > 0; i++)
-	{
-		s[i] = b;
-		n--;
-	}
-	return (s);
 }
