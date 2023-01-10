@@ -4,7 +4,6 @@
  * is_palindrome -  prints palindrome
  * @s: The palindrome
  * Return: int
- * rotator: the palindrome letter
  */
 
 int is_palindrome(char *s)
@@ -13,7 +12,7 @@ int is_palindrome(char *s)
 	{
 		return (1);
 	}
-	else if (*s != 11)
+	if (*s != 11)
 	{
 		return (0);
 	}
