@@ -1,11 +1,12 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * create_array - prints array of chars
- * @c: number of char
- * @size: number of bytes
- * Return: NULL
+ * create_array - creates an array of chars, and initializes
+ *  @c: char to initialize
+ *  @size: number of bytes to allocate
+ *  Return: a pointer to the array or null if it fails
  */
 
 char *create_array(unsigned int size, char c)
@@ -14,7 +15,8 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0 || array == 0)
 		return (NULL);
-	else if (size--)
+	while (size--)
 		array[size] = c;
-		return (array);
+	return (array);
+
 }
